@@ -7,4 +7,4 @@ minutes = int(fot_m / 60)
 
 seconds = int(raw_seconds % 60)
 
-print("{}:{}:{}".format(hours, minutes, seconds))
+print("{:03}:{:03}:{:03}".format(hours, minutes, seconds))
