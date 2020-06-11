@@ -1,5 +1,5 @@
-dohod = 6
-rashod = 3
+dohod = int(input("Доход: "))
+rashod = int(input("Расход: "))
 
 if dohod < rashod:
     diff = rashod - dohod
@@ -12,3 +12,4 @@ else:
     emp = int(input("Количество сотрудников: "))
     diff_on_emp = diff / emp
     print("Прибыль на одно сотрудника составляет {}.".format(diff_on_emp))
+
