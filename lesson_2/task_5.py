@@ -8,6 +8,6 @@ for i in kek:
 
     print(lis[i])
 
-
+# пока не доделал
 
 
