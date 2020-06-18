@@ -1,0 +1,27 @@
+def simple():
+    pass # заглушка если функция пустая
+print(simple())
+
+####################################
+
+def func1(s_1, s_2, s_3 = None):
+    my_sum = s_1 + s_2
+    print(f"hello sum = {my_sum}")
+
+func1(44, 55)
+
+####################################
+
+def func2(s_1, s_2, s_3=None):
+    my_sum = s_1 + s_2
+    print(f"hello sum = {my_sum}")
+
+func2(s_2=int(input("введите число: ")), s_1=55)
+
+####################################
+
+def func3(*args):
+
+    return args
+
+print(func3(10,101,10))
