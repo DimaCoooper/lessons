@@ -1,4 +1,4 @@
-def exe_1(a, b):
+def numbers(a, b):
     try:
         return a / b
     except ZeroDivisionError:
@@ -7,5 +7,11 @@ def exe_1(a, b):
         return 'No value'
 
 
-def exe_1_use():
-    print(exe_1((int(input('Enter first number: '))), (int(input('Enter second number: ')))))
+def main():
+    a = int(input("введите число 1: "))
+    b = int(input("введите число 2: "))
+    v = numbers(a, b)
+    print(v)
+
+main()
+
