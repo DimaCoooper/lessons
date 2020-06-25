@@ -12,17 +12,23 @@ def new_func():
 
 ################
 
-    new_list2 = [item for item in list if item not in new_list1]
+    new_list2 = (item for item in list)
 
-    print(f"new_list1 = {new_list1}")
-    print(f"new_list2 = {new_list2}")
+    #print(type(new_list2))
+    #print([new_list2])
 
+    #print(f"new_list1 = {new_list1}")
+    #print(f"new_list2 = {new_list2}")
+
+    yield new_list2
     # не очень понятно почему не работает с генератором :(
 
 def main():
 
-    new_func()
-
+    for i in new_func():
+        print(i)
+    print(type(new_func()))
+    print(list(new_func()))
 
 if __name__ == "__main__":
     main()
